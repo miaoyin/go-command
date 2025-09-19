@@ -1,0 +1,6 @@
+.vscode/
+.idea
+vendor
+*.exe
+*.amd64
+*.arm64s

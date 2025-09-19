@@ -1,0 +1,25 @@
+{
+  "TestPost": {
+    "Url": "http://127.0.0.1:8080/test",
+    "Method": "POST",
+    "ContentType": "application/json",
+    "Body": {
+      "key": "value"
+    }
+  },
+  "TestGet": {
+    "Url": "http://127.0.0.1:8080/test",
+    "Method": "GET",
+    "Values": {
+      "key": ["value1", "value2"]
+    }
+  },
+  "PostUpload": {
+    "Url": "http://127.0.0.1:8080/test",
+    "Method": "POST",
+    "Headers": {
+      "Content-Type": ["multipart/form-data"]
+    },
+    "FileToUpload": "xxx.mp4"
+  }
+}
