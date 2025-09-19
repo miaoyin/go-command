@@ -17,7 +17,7 @@ func init() {
 
 	//调用Http
 	Cmd.Flags().StringP("config", "c", "", "file path")
-	Cmd.Flags().String("name", "", "case name")
+	Cmd.Flags().String("name", "", "request name")
 	_ = Cmd.MarkFlagRequired("config")
 	_ = Cmd.MarkFlagRequired("name")
 }
