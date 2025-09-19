@@ -3,4 +3,4 @@
 vendor
 *.exe
 *.amd64
-*.arm64s
+*.arm64
