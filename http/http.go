@@ -75,12 +75,12 @@ func DoHttpRequest(configPath string, requestName string) error{
 	if err != nil {
 		return err
 	}
-	if rsp.StatusCode != http.StatusOK {
-		return fmt.Errorf("http status code: %d", rsp.StatusCode)
-	}
 	rspData, err := io.ReadAll(rsp.Body)
 	if err!=nil{
 		return err
+	}
+	if rsp.StatusCode != http.StatusOK {
+		return fmt.Errorf("http status code: %d, body=%s", rsp.StatusCode, string(rspData))
 	}
 	defer rsp.Body.Close()
 	if len(param.OutputFile)>0{
